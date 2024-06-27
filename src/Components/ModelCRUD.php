@@ -157,6 +157,6 @@ class ModelCRUD extends Component
 
     public function render()
     {
-        return view('modelcrud::model-crud');
+        return view('modelcrud::livewire.model-crud');
     }
 }
