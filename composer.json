@@ -1,9 +1,9 @@
 {
     "name": "cnrp/laravel-model-crud",
-    "description": "A reusable model CRUD component for Laravel Livewire",
+    "description": "A reusable Laravel Livewire component for CRUD operations.",
     "type": "library",
     "require": {
-        "php": "^8.1", 
+        "php": "^8.1",
         "livewire/livewire": "^3.5"
     },
     "autoload": {
@@ -17,7 +17,5 @@
                 "Cnrp\\ModelCRUD\\ModelCRUDServiceProvider"
             ]
         }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Cnrp\Livewire;
+namespace Cnrp\ModelCRUD\Components;
 
 use Livewire\Component;
 use Illuminate\Validation\ValidationException;
