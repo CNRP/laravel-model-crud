@@ -19,5 +19,7 @@ class ModelCRUDServiceProvider extends ServiceProvider
         ]);
 
         Livewire::component('model-crud', \Cnrp\ModelCRUD\Components\ModelCRUD::class);
+		Livewire::component('flash-message', \Cnrp\ModelCRUD\Components\FlashMessage::class);
+
     }
 }

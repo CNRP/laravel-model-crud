@@ -1,6 +1,6 @@
 <?php
 
-namespace Cnrp\Livewire;
+namespace Cnrp\ModelCRUD\Components;
 
 use Livewire\Component;
 use Livewire\Attributes\On;
@@ -22,6 +22,6 @@ class FlashMessage extends Component
 
     public function render()
     {
-        return view('livewire.flash-message');
+        return view('modelcrud::livewire.flash-message');
     }
 }
