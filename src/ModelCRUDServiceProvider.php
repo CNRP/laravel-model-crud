@@ -17,6 +17,6 @@ class ModelCRUDServiceProvider extends ServiceProvider
             __DIR__.'/../resources/views' => resource_path('views/vendor/model-crud'),
         ]);
 
-        \Livewire\Livewire::component('model-crud', \Cnrp\ModelCRUD\Livewire\ModelCRUD::class);
+        \Livewire\Livewire::component('model-crud', \Cnrp\ModelCRUD\Components\ModelCRUD::class);
     }
 }
