@@ -3,20 +3,21 @@
 namespace Cnrp\ModelCRUD;
 
 use Illuminate\Support\ServiceProvider;
+use Livewire\Livewire;
 
 class ModelCRUDServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'model-crud');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'modelcrud');
     }
 
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../resources/views' => resource_path('views/vendor/model-crud'),
+            __DIR__.'/../resources/views' => resource_path('views/vendor/modelcrud'),
         ]);
 
-        \Livewire\Livewire::component('model-crud', \Cnrp\ModelCRUD\Components\ModelCRUD::class);
+        Livewire::component('model-crud', \Cnrp\ModelCRUD\Components\ModelCRUD::class);
     }
 }
